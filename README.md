@@ -1,2 +1,2 @@
 # eflRethinking
-Helpers to solve practices from Rthinking, 2nd edition
+Helpers to solve practices from Rethinking, 2nd edition
