@@ -14,12 +14,12 @@
 #'
 #' @return \code{draws_rvars} object
 #' @export
-draw_posterior_map <- function(obj, n = 1L) {
+draw_posterior_quap <- function(obj, n = 1L) {
   checkmate::assert_class(obj, class = "map", ordered = TRUE)
   checkmate::assert_count(n, positive = TRUE)
 
-  samples <- rethinking::extract.samples(obj, n = n)
-  out <- MASS::mvrnorm(n = n, mu = obj@coef, Sigma = obj@vcov)
+  out <- rethinking::extract.samples(obj, n = n)
+  # out <- MASS::mvrnorm(n = n, mu = obj@coef, Sigma = obj@vcov)
   # cat("\n", "inside draw_posterior_map", "\n")
   # print(out)
   # cat("\n")

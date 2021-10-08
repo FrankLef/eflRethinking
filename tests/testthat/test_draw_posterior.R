@@ -21,7 +21,7 @@ test_that("verify the inla model object", {
 test_that("draw_posterior_map", {
   nsamples <- 3L
 
-  samples <- draw_posterior_map(m04m07ctr, n = nsamples)
+  samples <- draw_posterior_quap(m04m07ctr, n = nsamples)
   # str(samples)
   # expect_type(samples, "list")
   expect_s3_class(samples, "draws_rvars")
