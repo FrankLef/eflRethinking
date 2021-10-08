@@ -4,9 +4,10 @@ Title: Utilities used with Rethinking, 2nd edition
 Version: 0.1.0
 Author: Frank Lefever
 Maintainer: Frank Lefever <flefebvre01@hotmail.com>
-Description: Utilities to use with the INLA package.
-    Different tools to create summaries, plots to do the practices from
-    Rethinking, 2nd ed.
+Description: Utilities to use with the `Rethinking` package.
+    The functions are mainly used to convert objects so that they have
+    a `brms` feel, and, in particular, can be used as `rvars` and `draws_vars`
+    with the `posterior` package.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
@@ -18,12 +19,13 @@ Suggests:
 Imports:
     checkmate (>= 2.0.0),
     assertthat (>= 0.2.1),
+    MASS (>= 7.3-54),
     rlang (>= 0.4.8),
     dplyr (>= 1.0.2),
     tibble (>= 3.0.6),
     modelr (>= 0.1.8),
     cli (>= 2.1.0),
     gt (>= 0.3.1),
+    posterior (>= 1.1.0),
     brms (>= 2.16.1),
-    INLA (>= 21.02.23),
-    eflINLA (>= 0.1.0)
+    rethinking (>= 2.13)
